@@ -1,0 +1,7 @@
+Simple tag parser and data parser for the [Rainforest Automation EMU2](https://www.rainforestautomation.com/rfa-z105-2-emu-2-2/) energy meter. It expects to be fed serial data from the meter, and it triggers callbacks based on the received data.
+
+Work in progress, I'm sure there are plenty of memory leaks. There is no autoamted testing, somewhat tested manually. It seems to work for me(tm) on a microcontroller.
+
+I use this in conjunction with ESPhome component to feed data to Home Assistant.
+
+Manufacturer supplied Python interface: https://github.com/rainforestautomation/Emu-Serial-API
