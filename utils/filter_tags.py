@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 #cat sample.txt| python filter_tags.py
+"""
+Find all tag-like strings in a text file (for eg. capture from serial output),
+including strings split across multiple lines.
+"""
 
 import sys
 
