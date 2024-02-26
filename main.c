@@ -3,12 +3,7 @@
 #include "xml_parser.h"
 #include "emu2_parser.h"
 
-// void foo() {
-//     static const Emu2MetricData IDMetric = {
-//       .tag = EMU2_TAG_InstantaneousDemand,
-//       .members = {EMU2_TAG_DeviceMacId, EMU2_TAG_MeterMacId, EMU2_TAG_TimeStamp, EMU2_TAG_Demand, EMU2_TAG_Multiplier, EMU2_TAG_Divisor, EMU2_TAG_DigitsRight, EMU2_TAG_DigitsLeft, EMU2_TAG_SuppressLeadingZero }
-//     }
-// };
+// Example use of the emu2_parser that reads stdin, and pretty prints the parsed data.
 
 static void handle_tag(char *tag, int is_terminating, void *userdata) {
   Emu2Parser *emu2_parser = (Emu2Parser *)userdata;

@@ -109,22 +109,4 @@ void emu2_parser_process_tag(Emu2Parser *emu2_parser, char *tag, int is_terminat
 
 void emu2_parser_process_data(Emu2Parser *emu2_parser, char *data);
 
-/*
-static uint16_t parse_uint16(const char * str)
-{
-    uint16_t _val = 0;
-    char * temp;
-
-    _val = strtol(str, &temp, 0);
-
-    if(*temp != '\0') {
-      //TODO: bail with more serious error?
-            Serial1.printf("Could not convert %s to uint16 and leftover string is: %s\n", str, temp);
-    }
-
-    return _val;
-}
-
-*/
-
 #endif
