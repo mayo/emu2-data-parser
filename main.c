@@ -82,8 +82,8 @@ int main(void) {
   size_t num_read;
 
   do {
-    num_read = fread(buffer, sizeof(char), 10 - 1, stdin);
-    xml_parser_process(&xml_parser, buffer, sizeof(buffer));
+    num_read = fread(buffer, sizeof(char), sizeof(buffer), stdin);
+    xml_parser_process(&xml_parser, buffer, num_read);
 
   } while(num_read > 0);
 
